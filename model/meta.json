@@ -1,0 +1,68 @@
+{
+  "run_name": "bench_densenet121",
+  "backbone": "densenet121",
+  "variant": "P2_clahe_unsharp",
+  "balance": "both",
+  "augmentation": "standard",
+  "size": 224,
+  "lr_head": 0.001,
+  "lr_ft": 0.0001,
+  "unfreeze": 0.3,
+  "dropout": 0.4,
+  "class_names": [
+    "No DR",
+    "Mild NPDR",
+    "Moderate NPDR",
+    "Severe NPDR",
+    "Proliferative DR"
+  ],
+  "gradcam_layer": "relu",
+  "val_qwk": 0.8804,
+  "val_qwk_ci_low": 0.8501,
+  "val_qwk_ci_high": 0.9058,
+  "val_macro_f1": 0.6441,
+  "val_accuracy": 0.7885,
+  "best_logged_val_qwk": 0.8804,
+  "best_epoch": 15,
+  "epochs_run": 15,
+  "train_val_acc_gap": 0.1086,
+  "train_minutes": 15.2,
+  "ms_per_image": 104.1,
+  "trainable_params": 3385094,
+  "total_params": 7571782,
+  "temperature": 0.5163467728932041,
+  "ordinal_cutpoints": [
+    0.7221755883917572,
+    1.6166732459749573,
+    2.3212158553307876,
+    3.5405993438112477
+  ],
+  "referable_threshold": 0.6487038135528564,
+  "review_confidence": 0.5105352401733398,
+  "review_fraction": 0.1,
+  "test_metrics": {
+    "accuracy": 0.7945,
+    "accuracy_ci": [
+      0.7589,
+      0.83
+    ],
+    "qwk": 0.8763,
+    "qwk_ci": [
+      0.8426,
+      0.9065
+    ],
+    "macro_f1": 0.6421,
+    "macro_f1_ci": [
+      0.5852,
+      0.6962
+    ],
+    "weighted_f1": 0.7982,
+    "ordinal_decoding_qwk": 0.8817,
+    "referable_auc": 0.9732,
+    "referable_sensitivity": 0.9055,
+    "referable_specificity": 0.9213,
+    "any_dr_auc": 0.9883,
+    "ece_before": 0.204,
+    "ece_after": 0.0268
+  }
+}
