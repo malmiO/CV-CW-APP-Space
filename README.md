@@ -1,5 +1,5 @@
 ---
-title: DR-Sight
+title: Aura Retina
 emoji: 👁️
 colorFrom: blue
 colorTo: gray
@@ -9,7 +9,7 @@ pinned: false
 short_description: Explainable diabetic retinopathy screening support
 ---
 
-# DR-Sight — diabetic retinopathy screening prototype
+# Aura Retina — diabetic retinopathy screening prototype
 
 Upload a colour fundus photo. The app
 

@@ -1,5 +1,5 @@
 """
-streamlit_app.py - DR-Sight, the hosted screening prototype.
+streamlit_app.py - Aura Retina, the hosted screening prototype.
 
   upload -> quality gate -> pre-process -> 8-view TTA -> calibrated grade
          -> triage + human-review flag -> Grad-CAM -> PDF summary
@@ -38,7 +38,7 @@ TRIAGE = {   # colour, headline, what the user should do
     "Ungradable": ("#5B6770", "Retake the photo", "The image cannot be graded reliably."),
 }
 
-st.set_page_config(page_title="DR-Sight", page_icon="👁️", layout="wide")
+st.set_page_config(page_title="Aura Retina", page_icon="👁️", layout="wide")
 st.markdown("""
 <style>
   .block-container {max-width: 1150px; padding-top: 2.2rem;}
@@ -191,7 +191,7 @@ def model_card_tab():
              "- Heavily compressed or very noisy photos remain harder than clinic-quality ones.")
 
 
-st.title("DR-Sight")
+st.title("Aura Retina")
 st.caption("Diabetic retinopathy screening support — grade, explanation and triage from a retinal photo.")
 tabs = st.tabs(["Screen one photo", "Screen a batch", "About this model"])
 with tabs[0]:

@@ -106,7 +106,7 @@ def pdf_report(result: dict, original: np.ndarray, out_path: str | Path) -> str:
     from fpdf import FPDF
 
     pdf = FPDF(); pdf.add_page(); pdf.set_auto_page_break(True, 15)
-    pdf.set_font("Helvetica", "B", 16); pdf.cell(0, 10, "DR-Sight screening summary", new_x="LMARGIN", new_y="NEXT")
+    pdf.set_font("Helvetica", "B", 16); pdf.cell(0, 10, "Aura Retina screening summary", new_x="LMARGIN", new_y="NEXT")
     pdf.set_font("Helvetica", "", 9)
     pdf.cell(0, 5, f"Generated {result['timestamp']}   Model: {result['model']}", new_x="LMARGIN", new_y="NEXT"); pdf.ln(3)
 

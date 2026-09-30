@@ -43,7 +43,7 @@ def set_global_seed(seed: int = SEED) -> None:
 #           Google Drive so they survive a disconnect, image cache local
 #           (Drive is slow for thousands of small files).
 #   Kaggle: data mounted read-only under /kaggle/input, outputs in /kaggle/working.
-#   Local : everything under ~/dr-sight-work.
+#   Local : everything under ~/Aura Retina-work.
 # --------------------------------------------------------------------------
 if Path("/kaggle/working").exists():
     ENVIRONMENT = "kaggle"
@@ -57,7 +57,7 @@ elif Path("/content").exists():
     _cache = "/content/cache"
 else:
     ENVIRONMENT = "local"
-    _home = Path.home() / "dr-sight-work"
+    _home = Path.home() / "Aura Retina-work"
     _raw, _work, _cache = str(_home / "aptos"), str(_home), str(_home / "cache")
 
 RAW_IMAGE_DIR = Path(os.getenv("DR_RAW_DIR", f"{_raw}/train_images"))
