@@ -24,5 +24,4 @@ Upload a colour fundus photo. The app
 On a held-out test set of 506 images: quadratic weighted kappa 0.88, referable-DR sensitivity
 91% and specificity 92%.
 
-Coursework prototype (BSc (Hons) Computer Science, NIBM). **Not a medical device and not a
-diagnosis.**
+
