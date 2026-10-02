@@ -1,6 +1,6 @@
 ---
 title: Aura Retina
-emoji: 👁️
+emoji: 🛡️
 colorFrom: blue
 colorTo: gray
 sdk: streamlit
